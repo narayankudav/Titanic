@@ -13,6 +13,7 @@ pipeline {
           steps {
             git(url: 'https://github.com/narayankudav/Titanic/', branch: 'master')
             echo 'r1'
+            cleanWs()
           }
         }
 
@@ -20,6 +21,7 @@ pipeline {
           steps {
             git(url: 'https://github.com/narayankudav/Titanic/', branch: 'master')
             echo 'r2'
+            cleanWs()
           }
         }
 
