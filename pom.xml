@@ -9,7 +9,7 @@
     </parent>
     <groupId>com.svirtz</groupId>
     <artifactId>discovery-service</artifactId>
-    <version>6.0.1-SNAPSHOT</version>
+    <version>6.0.1</version>
     <name>discovery-service</name>
     <description>Discovery Service</description>
 
@@ -25,7 +25,7 @@
         <url>${git.repository}</url>
         <connection>scm:git:${git.repository}</connection>
         <developerConnection>scm:git:${git.repository}</developerConnection>
-		<tag>${project.version}</tag>
+		<tag>6.0.1</tag>
     </scm>
 
 
@@ -90,7 +90,7 @@
 		<repository>
 		  <id>internal.repo</id>
 		  <name>Internal repo</name>
-		  <url>file://${project.basedir}/target</url>
+		  <url>file://${project.basedir}/releases</url>
 		</repository>
 	</distributionManagement>
 
