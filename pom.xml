@@ -86,6 +86,14 @@
         </dependencies>
     </dependencyManagement>
 
+	<distributionManagement>
+		<repository>
+		  <id>internal.repo</id>
+		  <name>Internal repo</name>
+		  <url>${project.basedir}/target</url>
+		</repository>
+	</distributionManagement>
+
     <build>
         <plugins>
             <plugin>
