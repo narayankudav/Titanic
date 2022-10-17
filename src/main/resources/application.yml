@@ -1,0 +1,30 @@
+server:
+    port: ${EUREKA_SERVICE_PORT:8010}
+
+spring:
+    application:
+        name: ${EUREKA_SERVICE_NAME:discovery-service}
+    config:
+        import: "optional:configserver:"
+    security:
+        user: 
+            name: ${EUREKA_SERVICE_USER:testUser}
+            password: ${EUREKA_SERVICE_PASSWORD:testPassword}
+    cloud:
+        config:
+            uri: http://${CONFIG_SERVER_HOST:localhost}:${CONFIG_SERVER_PORT:8888}
+logging:
+    file:
+        name: ${spring.application.name}.log
+    level:
+        "[org.springframework]": OFF
+eureka:
+    instance:
+        hostname: ${EUREKA_SERVICE_HOST:localhost}
+        preferIpAddress: true
+    client:
+        enabled: true
+        register-with-eureka: false
+        fetch-registry: false
+        serviceUrl:
+            defaultZone: http://${EUREKA_SERVICE_USER:testUser}:${EUREKA_SERVICE_PASSWORD:testPassword}@${EUREKA_SERVICE_HOST:localhost}:${EUREKA_SERVICE_PORT:8010}/eureka/
