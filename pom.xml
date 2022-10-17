@@ -18,7 +18,7 @@
         <spring-cloud.version>2021.0.1</spring-cloud.version>
         <docker.image.prefix>svirtz</docker.image.prefix>
         <docker.image.name>${project.artifactId}</docker.image.name>
-        <git.repository>https://github.com/oldmonktech/discovery-service.git</git.repository>
+        <git.repository>https://github.com/narayankudav/Titanic.git</git.repository>
     </properties>
 
     <scm>
