@@ -22,9 +22,9 @@
     </properties>
 
     <scm>
-        <url>{git.repository}</url>
-        <connection>scm:git:{git.repository}</connection>
-        <developerConnection>scm:git:{git.repository}</developerConnection>
+        <url>${git.repository}</url>
+        <connection>scm:git:${git.repository}</connection>
+        <developerConnection>scm:git:${git.repository}</developerConnection>
         <tag>@{project.version}</tag>
     </scm>
 
