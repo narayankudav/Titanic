@@ -9,7 +9,7 @@
     </parent>
     <groupId>com.svirtz</groupId>
     <artifactId>discovery-service</artifactId>
-    <version>5.0.6</version>
+    <version>6.0.6-SNAPSHOT</version>
     <name>discovery-service</name>
     <description>Discovery Service</description>
 
